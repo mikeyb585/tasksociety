@@ -16,27 +16,36 @@
             <h1>tasksociety</h1>
         </div>
         <div class="line1">
-            <h2>is a great day to boss up.</h2>
-        </div>
-        <div class="newTask">
-            <form id="task-form" style="max-width: 25rem;">
-                <div class="input-field">
-                    <!--change color of text to white-->
-                    <input type="text" name="task" id="task" class="text-warning">
-                    <label for="task">New Task</label>
+                <h2>is a great day to boss up.</h2>
+            </div>
+        <div class="row">
+            <div class="col s12">
+                <div id="main" class="card" style="max-width: 30rem;">
+                    <div class="card-content">
+                        <div class="row">
+                            <form id="task-form" style="max-width: 20rem;">
+                                <div class="input-field col s12">
+                                    <input type="text" name="task" id="task" class="text-warning">
+                                    <label for="task">New Task</label>
+                                </div>
+                                    <!--change color of text to white-->
+                                    <input type="submit" value="Add Task" class="btn orange">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-action" style="max-width: 30rem;">
+                        <ul class="collection"></ul>
+                        <a href="#" class="clear-tasks btn orange">Clear Tasks</a>
+                    </div>
                 </div>
-                <input type="submit" value="Add Task" class="btn orange">
-            </form>
-        </div>
-        <div class="taskList" style="max-width: 25rem;">
-            <ul class="collection"></ul>
-            <a href="#" class="clear-tasks btn orange">Clear Tasks</a>
+            </div>
         </div>
     <div class="footer">
         <footer>
             <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> | Developed by <a href="https://www.codebrown.co/">Michael Brown</a></p>
         </footer>
     </div>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
