@@ -10,42 +10,41 @@
     <link rel= "stylesheet" href="styles.css">
     <title>tasksociety</title>
 </head>
-<body>
+<body onLoad="todayDay()">
     <div class="container">
+        
         <div class="header">
             <h1>tasksociety</h1>
         </div>
-
         <div class="subHeader">
-            <h2>is a great day to boss up.</h2>
+            <h4 id="day">is a great day to boss up.</h4>
         </div>
 
-    <div class="newTask">
-        <form id="task-form" style="max-width: 20rem;">
-            <div class="input-field col s12">
-                <input type="text" name="task" id="task">
-                <label for="task">New Task</label>
-            </div>
-                <input type="submit" value="Add Task" class="btn orange">
-        </form>
-    </div>
-                    
-    <div class="taskList" style="max-width: 20rem;">
-        <ul class="collection"></ul>
-        <a href="#" class="clear-tasks btn orange">Clear Tasks</a>
-    </div>
-        
-    
-    <div class="footer">
-        <footer>
+        <div class="newTask">
+            <form id="task-form" style="max-width: 20rem;">
+                <div class="input-field col s12">
+                    <input type="text" name="task" id="task">
+                    <label for="task">New Task</label>
+                </div>
+                    <input type="submit" value="Add Task" class="btn orange">
+            </form>
+        </div>
+
+        <div class="taskList" style="max-width: 20rem;">
+            <ul class="collection"></ul>
+            <a href="#" class="clear-tasks btn orange">Clear Tasks</a>
+        </div>
+
+
+        <div class="footer">
             <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> | Developed by <a href="https://www.codebrown.co/">Michael Brown</a></p>
-        </footer>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="app.js"></script>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.js"
-    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script src="app.js"></script>
 </body>
 </html>
