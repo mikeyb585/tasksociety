@@ -1,3 +1,18 @@
+function todayDay() {
+  let d = new Date();
+  let weekday = new Array(7);
+  weekday[0] = "Sundays are a great day to boss up.";
+  weekday[1] = "Mondays are great day to boss up.";
+  weekday[2] = "Tuesdays are a great day to boss up.";
+  weekday[3] = "Wednesdays are a great day to boss up.";
+  weekday[4] = "Thursdays are a great day to boss up.";
+  weekday[5] = "Fridays are a great day to boss up.";
+  weekday[6] = "Saturdays are a great day to boss up.";
+
+  let n = weekday[d.getDay()];
+document.getElementById("day").innerHTML = n;
+}
+
 // Define UI Vars
 const form = document.querySelector('#task-form');
 const taskList = document.querySelector('.collection');
@@ -53,7 +68,7 @@ function getTasks() {
 function addTask(e) {
   if(taskInput.value === '') {
     alert('Add a task');
-  }
+  } else {
 
   // Create li element
   const li = document.createElement('li');
@@ -78,6 +93,7 @@ function addTask(e) {
 
   // Clear input
   taskInput.value = '';
+  }
 
   e.preventDefault();
 }
