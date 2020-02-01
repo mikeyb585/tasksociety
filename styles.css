@@ -68,12 +68,13 @@ body {
     .header{
         padding-bottom: 120px;
     }
+    
     .subHeader{
         padding-bottom: 40px;
     }
 
     .footer{
-        padding-top: 300px;
         text-align: left;
+        bottom: 0;
     }
 }
