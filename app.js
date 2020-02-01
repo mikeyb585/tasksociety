@@ -1,13 +1,13 @@
 function todayDay() {
   let d = new Date();
   let weekday = new Array(7);
-  weekday[0] = "Sundays are a great day to boss up.";
-  weekday[1] = "Mondays are great day to boss up.";
-  weekday[2] = "Tuesdays are a great day to boss up.";
-  weekday[3] = "Wednesdays are a great day to boss up.";
-  weekday[4] = "Thursdays are a great day to boss up.";
-  weekday[5] = "Fridays are a great day to boss up.";
-  weekday[6] = "Saturdays are a great day to boss up.";
+  weekday[0] = "Sunday is great day to boss up.";
+  weekday[1] = "Monday is great day to boss up.";
+  weekday[2] = "Tuesday is a great day to boss up.";
+  weekday[3] = "Wednesday is a great day to boss up.";
+  weekday[4] = "Thursday is a great day to boss up.";
+  weekday[5] = "Friday is a great day to boss up.";
+  weekday[6] = "Saturday is a great day to boss up.";
 
   let n = weekday[d.getDay()];
 document.getElementById("day").innerHTML = n;
