@@ -28,6 +28,7 @@ body {
     grid-area: taskList;
 }
 
+input[type="text"]
 select:focus,
 textarea {
     font-size: 16px;
