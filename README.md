@@ -1,5 +1,5 @@
 # tasksociety
-A lightweight productivity tool that stores tasks
+A lightweight productivity tool that stores tasks.
 
 ## Project Description
 In this project I used Font Awesome provided by Bootstrap for the icons and Materialize CSS for the framework. I created this
